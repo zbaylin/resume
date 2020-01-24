@@ -6,10 +6,18 @@
 \usepackage{enumitem}
 \usepackage{hyperref}
 \usepackage{xhfill}
+\usepackage{xcolor}
+\hypersetup{
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black}
+}
 \setlength\parindent{0pt}
-\setmainfont{Electra LT Std}
+\setmainfont[Scale=1.1,ItalicFont={Meta Serif Pro Book Italic}]{Meta Serif Pro}
+\linespread{1.15}
 
-\setlist[itemize]{noitemsep, topsep=0pt, leftmargin=12pt}
+\setlist[itemize]{nolistsep, topsep=0pt, leftmargin=12pt}
 
 \pagenumbering{gobble}
 \def\labelitemi{--}
@@ -18,12 +26,20 @@
 
 \begin{document}
   \begin{center}
-    {\LARGE \textbf{\textsc{Zachary Baylin}}}
+    {\Large \textbf{\textsc{Zachary Baylin}}}
 
-    \vspace{2pt}
+    \vspace{3pt}
 
     \href{mailto:me@zachbayl.in}{\faEnvelope \hspace{1pt} me@zachbayl.in} \hspace{3pt} \faPhone \hspace{1pt} (770) 722-8911 \hspace{3pt} \faIcon{map-marker-alt} Atlanta, GA \hspace{3pt} \href{https://linkedin.com/in/zbaylin}{\faLinkedin \hspace{1pt} zbaylin} \hspace{3pt} \href{https://github.com/zbaylin}{\faGithub \hspace{1pt} zbaylin} \hspace{3pt} \href{http://zachbayl.in}{\faGlobeAmericas \hspace{1pt} zachbayl.in}\\
   \end{center}
+
+  \sectionHeader{Personal Statment}
+
+  \vspace{3pt}
+
+  Analytical and curious developer with a passion for mathematical problem-solving through programming
+
+  \vspace{8pt}
 
   \sectionHeader{Education}
 
@@ -32,12 +48,13 @@
   \textbf{Georgia Institute of Technology} - Atlanta, GA \hspace*{\fill}Expected Graduation May 2022\\
   Candidate for B.S. in Computer Science\\
   Concentrating in System Architecture \& Theory\\
-  GPA 4.0
+  Major GPA: 4.0, Cumulative GPA: 4.0
 
   \vspace{5pt}
 
   \textbf{North Springs Charter High School} - Sandy Springs, GA \hspace*{\fill}Graduated May 2019\\
   High School Diploma with Math \& Science Magnet Seal\\
+  Top 10 out of 400\\
   GPA 102/100
 
   \vspace{8pt}
@@ -49,10 +66,9 @@
   \textbf{Rolltrax LLC} \hspace{3pt} Atlanta, GA \hspace*{\fill} August 2017 - Present\\
   \textit{Co-Founder \& CTO}
   \begin{itemize}
-    \item Developing the software stack, including the Crystal web API, the ReasonReact frontend, Flutter mobile apps, and Qt desktop app
-    \item Founded the company alongside two other partners, Ohad Rau and Dr. Brian Patterson.
-    \item Beta tested the system at North Springs Charter High School in the 2017-2018 and 2018-2019 school years
-    \item Expanding the use of the system to multiple schools and districts in the state of Georgia
+    \item Developed a full-stack SaaS solution for work-based learning coordinators and students to take attendance and manage their work. The system is composed of a Crystal web API and a ReasonReact frontend.
+    \item Beta tested the system at North Springs High School over two years in order to determine the needs of our clients.
+    \item Expanded the use of the system to over a dozen schools in the state of Georgia, where the system is relied upon for daily attendance
   \end{itemize}
 
   \vspace{5pt}
@@ -60,9 +76,8 @@
   \textbf{Fulton County Schools} \hspace{3pt} Fulton County, GA \hspace*{\fill} August 2016 - May 2019\\
   \textit{Intern, Network Engineer}
   \begin{itemize}
-    \item Managed the county-wide network of the school system, which included remotely monitoring network equipment.
+    \item Managed and monitored the county-wide network of the 90+-school system, including outage detection \& repair and new equipment provisioning.
     \item Wrote custom in-house software in both OCaml and Ruby to provide technical and hardware support to students and teachers.
-    \item Set up Cisco, Juniper, Palo Alto, and Aruba network equipment to integrate with the county's systems.
     \item Removed dependency on Windows-based servers by utilizing Linux alternatives, specifically CentOS and RHEL.
   \end{itemize}
 
@@ -73,21 +88,9 @@
   \vspace{3pt}
 
   \begin{itemize}
-    \item \textbf{Revery}: Member of the organization which develops \href{https://github.com/revery-ui/revery}{Revery}, a native cross-playform UI toolkit that uses technologies like OpenGL, Skia, and others to create a consistent UI experience across multiple platforms. The project leverages the ReasonML/OCaml platform and integrates with both Javascript and C/C++.
-    \item \textbf{BookWorm}: Created a GUI application using Qt and Python for the 2019 FBLA Coding \& Programming event, which helped librarians manage and distribute copies of DRM-protected eBooks. The API backend was written in Crystal using the Kemal routing DSL, which integrated into a SQLite database. The project won first place at the Georgia FBLA SLC, and fifth place at the FBLA NLC.
-    \item \textbf{Traveller}: In a team of two, created an application in Nim that solved specific implementations of the travelling salesman problem. Using OpenStreetMap data, we created a router using the greedy method and Dijkstra's algorithm to generate the shortest path between multiple points of interest.
-    \item \textbf{SECurity-py}: Created a Python program to historically analyze trends between quarterly filings provided by the SEC. The program tracks holdings between quarters listed in 13F-HR forms and reports analytics over a specified period of time. It also has both a GUI facet written in Qt Widgets, and Excel integration using the library xlwings.
-    \item \textbf{MATH 2803 Research}: Researched the topic of Big-O notation and algorithm runtime by creating an analyzing various factoring algorithms in Julia using Jupyter notebook.
-  \end{itemize}
-
-  \vspace{8pt}
-
-  \sectionHeader{Extracurricular Activities}
-
-  \vspace{3pt}
-
-  \begin{itemize}
-    \item \textbf{Future Business Leaders of America}: Served as vice president and treasurer of the North Springs chapter, where I was in charge of helping other members prepare for their events, and managed the budget and club expenses. Received awards at both the national and state level competitions in computer science-focused events.
+    \item \textbf{Revery}: Member of the organization which develops \href{https://github.com/revery-ui/revery}{Revery}, a native cross-playform UI toolkit that uses technologies like OpenGL, Skia, and others to create a consistent UI experience across multiple platforms. The project leverages the ReasonML and OCaml platforms and integrates with both Javascript and C/C++.
+    \item \textbf{BookWorm}: Created a GUI application using Qt and Python for the 2019 FBLA Coding \& Programming event, which helped librarians manage and distribute copies of DRM-protected eBooks. The API backend was written in Crystal using the Kemal routing DSL, which integrated into a SQLite database.
+    \item \textbf{SECurity-py}: Created a Python program to historically analyze trends between quarterly filings provided by the SEC. The program tracks holdings between quarters listed in 13F-HR forms and reports analytics over a specified period of time.
   \end{itemize}
 
   \vspace{8pt}
@@ -98,15 +101,14 @@
 
   \begin{itemize}
     \item \textbf{FBLA Coding \& Programming}: Received first place at the 2019 Georgia FBLA SLC and fifth place at the National Leadership Conference for my application BookWorm (see \textsc{Projects}).
-    \item \textbf{FBLA Mobile Application Development}: Received seventh place at the 2018 Georgia FBLA SLC for my application bibliotech, which I developed in a group of two other people.
   \end{itemize}
 
   \vspace{8pt}
 
   \sectionHeader{Skills}
   \begin{itemize}
-    \item \textbf{Languages/Tools}: ReasonML, OCaml, Ruby, Crystal, Java, C, C++, Objective-C, Cocoa, PostgreSQL, Javascript, Sinatra, ReactJS, Linux, Win32/COM, Docker, Google Cloud, Dart, Flutter
-    \item \textbf{Classes Taken}: Object-Oriented Programming, Data Structures \& Algorithms, Discrete Mathematics, Combinatorics, Number Theory \& Cryptography
+    \item \textbf{Languages/Tools}: ReasonML, OCaml, Ruby, Crystal, Java, C, C++, Objective-C, Cocoa, PostgreSQL, Javascript, Sinatra, ReactJS, Linux, Win32/COM, Docker, Google Cloud, Dart, Flutter, Git
+    \item \textbf{Relevant Coursework}: Object-Oriented Programming, Data Structures \& Algorithms, Computer Organization \& Design, Discrete Mathematics, Combinatorics, Number Theory \& Cryptography
   \end{itemize}
 
 
