@@ -14,8 +14,9 @@
     urlcolor={blue!80!black}
 }
 \setlength\parindent{0pt}
-\setmainfont[Scale=1.1,ItalicFont={Meta Serif Pro Book Italic}]{Meta Serif Pro}
-\linespread{1.15}
+\setmainfont[Scale=0.95,ItalicFont={IBM Plex Serif Italic}]{IBM Plex Serif}
+\linespread{1.1}
+\setmonofont[Scale=MatchLowercase]{IBM Plex Mono}
 
 \setlist[itemize]{nolistsep, topsep=0pt, leftmargin=12pt}
 
@@ -24,20 +25,22 @@
 
 \newcommand{\sectionHeader}[1]{{\large \textbf{\textsc{#1}}}\hspace{5pt}\xrfill[.5ex]{.4pt}}
 
+\newcommand{\headerInfoSpacer}{\hspace{10pt}}
+
 \begin{document}
   \begin{center}
-    {\Large \textbf{\textsc{Zachary Baylin}}}
+    \textbf{{\Huge Z}{\huge ACHARY} \hspace{1pt} {\Huge B}{\huge AYLIN}}
 
     \vspace{3pt}
 
-    \href{mailto:me@zachbayl.in}{\faEnvelope \hspace{1pt} me@zachbayl.in} \hspace{3pt} \faPhone \hspace{1pt} (770) 722-8911 \hspace{3pt} \faIcon{map-marker-alt} Atlanta, GA \hspace{3pt} \href{https://linkedin.com/in/zbaylin}{\faLinkedin \hspace{1pt} zbaylin} \hspace{3pt} \href{https://github.com/zbaylin}{\faGithub \hspace{1pt} zbaylin} \hspace{3pt} \href{http://zachbayl.in}{\faGlobeAmericas \hspace{1pt} zachbayl.in}\\
+    \href{mailto:me@zachbayl.in}{\faEnvelope \hspace{1pt} me@zachbayl.in} \headerInfoSpacer \faPhone \hspace{1pt} (770) 722-8911 \headerInfoSpacer \faIcon{map-marker-alt} Atlanta, GA \headerInfoSpacer \href{https://linkedin.com/in/zbaylin}{\faLinkedin \hspace{1pt} zbaylin} \headerInfoSpacer \href{https://github.com/zbaylin}{\faGithub \hspace{1pt} zbaylin} \headerInfoSpacer \href{https://zachbayl.in}{\faGlobeAmericas \hspace{1pt} zachbayl.in}\\
   \end{center}
 
   \sectionHeader{Personal Statment}
 
   \vspace{3pt}
 
-  Analytical and intellectually curious developer with a passion for mathematical problem-solving through programming
+  Analytical and intellectually curious developer with a passion for mathematical problem-solving through programming.
 
   \vspace{8pt}
 
@@ -45,26 +48,33 @@
 
   \vspace{3pt}
 
-  \textbf{Georgia Institute of Technology} - Atlanta, GA \hspace*{\fill}Expected Graduation May 2022\\
+  \textbf{Georgia Institute of Technology} \hspace{3pt} {\footnotesize \faIcon{map-marker-alt}} Atlanta, GA \hspace*{\fill} {\footnotesize \faIcon{calendar}} \hspace{1pt} Expected Graduation May 2022\\
   Candidate for B.S. in Computer Science\\
   Concentrating in System Architecture \& Theory\\
   Major GPA: 4.0, Cumulative GPA: 4.0
 
   \vspace{5pt}
 
-  \textbf{North Springs Charter High School} - Sandy Springs, GA \hspace*{\fill}Graduated May 2019\\
+  \textbf{North Springs Charter High School} \hspace{3pt} {\footnotesize \faIcon{map-marker-alt}} Sandy Springs, GA \hspace*{\fill} {\footnotesize \faIcon{calendar}} \hspace{1pt} Graduated May 2019\\
   High School Diploma with Math \& Science Magnet Seal\\
-  Top 10 out of 400\\
-  GPA 102/100
+  GPA 102/100, Top 10 out of 400
 
   \vspace{8pt}
 
   \sectionHeader{Work Experience}
 
+  \href{https://www.outrunlabs.com/}{\textbf{Outrun Labs LLC}} \hspace{3pt} {\footnotesize \faIcon{map-marker-alt}} Remote \hspace*{\fill} {\footnotesize \faIcon{calendar}} \hspace{1pt} May 2020 - August 2020\\
+  {\footnotesize \faIcon{briefcase}} \hspace{1pt} \textit{Software Engineer Intern}
+  \begin{itemize}
+    \item Helped to develop the \href{https://github.com/revery-ui/revery}{Revery} cross-platform GUI framework by deepening integrations into supported operating systems.
+    \item Worked on \href{https://onivim.io/}{Onivim2}, a modal text editor based on \texttt{vim} which, at the time, was the principal software developed and sold by the company.
+    \item Primarily wrote ReasonML, but also integrated with system APIs in C/C++ (Win32 \& GTK3) and Objective-C (Cocoa).
+  \end{itemize}
+
   \vspace{3pt}
 
-  \textbf{Rolltrax LLC} \hspace{3pt} Atlanta, GA \hspace*{\fill} August 2017 - Present\\
-  \textit{Co-Founder \& CTO}
+  \href{https://rolltrax.com}{\textbf{Rolltrax LLC}} \hspace{3pt} {\footnotesize \faIcon{map-marker-alt}} Atlanta, GA \hspace*{\fill} {\footnotesize \faIcon{calendar}} \hspace{1pt} August 2017 - Present\\
+  {\footnotesize \faIcon{briefcase}} \hspace{1pt} \textit{Co-Founder \& CTO}
   \begin{itemize}
     \item Developed a full-stack SaaS solution for work-based learning coordinators and students to take attendance and manage their work. The system is composed of a Crystal web API and a ReasonReact frontend.
     \item Beta tested the system at North Springs High School over two years in order to determine the needs of our clients.
@@ -73,8 +83,8 @@
 
   \vspace{5pt}
 
-  \textbf{Fulton County Schools} \hspace{3pt} Fulton County, GA \hspace*{\fill} August 2016 - May 2019\\
-  \textit{Intern, Network Engineer}
+  \href{https://fultonschools.org}{\textbf{Fulton County Schools}} \hspace{3pt} {\footnotesize \faIcon{map-marker-alt}} Fulton County, GA \hspace*{\fill} {\footnotesize \faIcon{calendar}} \hspace{1pt} August 2016 - May 2019\\
+  {\footnotesize \faIcon{briefcase}} \hspace{1pt} \textit{Intern, Network Engineer}
   \begin{itemize}
     \item Managed and monitored the county-wide network of the 90+-school system, including outage detection \& repair and new equipment provisioning.
     \item Wrote custom in-house software in both OCaml and Ruby to provide technical and hardware support to students and teachers.
@@ -88,7 +98,7 @@
   \vspace{3pt}
 
   \begin{itemize}
-    \item \textbf{Revery}: Member of the organization which develops \href{https://github.com/revery-ui/revery}{Revery}, a native cross-playform UI toolkit that uses technologies like OpenGL, Skia, and others to create a consistent UI experience across multiple platforms. The project leverages the ReasonML and OCaml platforms and integrates with both Javascript and C/C++.
+\setmainfont[Scale=1.0,ItalicFont={IBM Plex Serif Italic}]{IBM Plex Serif}
     \item \textbf{BookWorm}: Created a GUI application using Qt and Python for the 2019 FBLA Coding \& Programming event, which helped librarians manage and distribute copies of DRM-protected eBooks. The API backend was written in Crystal using the Kemal routing DSL, which integrated into a SQLite database.
     \item \textbf{SECurity-py}: Created a Python program to historically analyze trends between quarterly filings provided by the SEC. The program tracks holdings between quarters listed in 13F-HR forms and reports analytics over a specified period of time.
   \end{itemize}
@@ -108,10 +118,8 @@
   \sectionHeader{Skills}
   \begin{itemize}
     \item \textbf{Languages/Tools}: ReasonML, OCaml, Ruby, Crystal, Java, C, C++, Objective-C, Cocoa, PostgreSQL, Javascript, Sinatra, ReactJS, Linux, Win32/COM, Docker, Google Cloud, Dart, Flutter, Git
-    \item \textbf{Relevant Coursework}: Object-Oriented Programming, Data Structures \& Algorithms, Computer Organization \& Design, Discrete Mathematics, Combinatorics, Number Theory \& Cryptography
+    \item \textbf{Relevant Coursework}: \href{http://www.catalog.gatech.edu/search/?P=CS%201331}{Object-Oriented Programming}, \href{http://www.catalog.gatech.edu/search/?P=CS%201332}{Data Structures \& Algorithms}, \href{http://www.catalog.gatech.edu/search/?P=CS%202110}{Computer Organization \& Design}, \href{http://www.catalog.gatech.edu/search/?P=CS%202050}{Discrete Mathematics}, \href{https://people.math.gatech.edu/~trotter/math-3012/toppage.html}{Combinatorics}, \href{https://math.gatech.edu/courses/math/4803-hp}{Number Theory \& Cryptography}, \href{https://math.gatech.edu/courses/math/1554}{Linear Algebra}
   \end{itemize}
 
 
 \end{document}
-
-% Move skills to another section
