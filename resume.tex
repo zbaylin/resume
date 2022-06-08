@@ -1,5 +1,6 @@
 \documentclass{article}
 \usepackage[margin=.5in]{geometry}
+\usepackage{amsmath}
 \usepackage{fontspec}
 \usepackage{fontawesome5}
 \usepackage{graphicx}
@@ -14,22 +15,23 @@
     urlcolor={blue!80!black}
 }
 \setlength\parindent{0pt}
-\setmainfont[Scale=0.95,ItalicFont={IBM Plex Serif Italic}]{IBM Plex Serif}
+\setmainfont[Scale=0.95,ItalicFont={Linguistics Pro Italic}]{Linguistics Pro}
 \linespread{1.1}
-\setmonofont[Scale=MatchLowercase]{IBM Plex Mono}
 
 \setlist[itemize]{nolistsep, topsep=0pt, leftmargin=12pt}
 
 \pagenumbering{gobble}
-\def\labelitemi{--}
+\def\labelitemi{$\ast$}
 
-\newcommand{\sectionHeader}[1]{{\large \textbf{\textsc{#1}}}\hspace{5pt}\xrfill[.5ex]{.4pt}}
+\newcommand{\sectionHeader}[1]{{\large \textbf{#1}}\hspace{5pt}\xrfill[.6ex]{.4pt}}
 
 \newcommand{\headerInfoSpacer}{\hspace{10pt}}
 
+\newcommand{\sectionSpacer}{\vspace{6pt}}
+
 \begin{document}
   \begin{center}
-    \textbf{{\Huge Z}{\huge ACHARY} \hspace{1pt} {\Huge B}{\huge AYLIN}}
+    \textbf{{\Huge Zachary G. Baylin}}
 
     \vspace{3pt}
 
@@ -42,75 +44,84 @@
 
   Analytical and intellectually curious developer with a passion for mathematical problem-solving through programming.
 
-  \vspace{8pt}
+  \sectionSpacer
 
   \sectionHeader{Education}
 
   \vspace{3pt}
 
-  \textbf{Georgia Institute of Technology} \hspace{3pt} {\footnotesize \faIcon{map-marker-alt}} Atlanta, GA \hspace*{\fill} {\footnotesize \faIcon{calendar}} \hspace{1pt} Expected Graduation May 2022\\
+  \textbf{Georgia Institute of Technology} \hspace{3pt} {\footnotesize \faIcon{map-marker-alt}} Atlanta, GA \hspace*{\fill} {\footnotesize \faIcon{calendar}} \hspace{1pt} Expected Graduation Summer 2022\\
   Candidate for B.S. in Computer Science\\
   Concentrating in System Architecture \& Theory\\
   Major GPA: 4.0, Cumulative GPA: 4.0
 
-  \vspace{5pt}
-
-  \textbf{North Springs Charter High School} \hspace{3pt} {\footnotesize \faIcon{map-marker-alt}} Sandy Springs, GA \hspace*{\fill} {\footnotesize \faIcon{calendar}} \hspace{1pt} Graduated May 2019\\
-  High School Diploma with Math \& Science Magnet Seal\\
-  GPA 102/100, Top 10 out of 400
-
-  \vspace{8pt}
+  \sectionSpacer
 
   \sectionHeader{Work Experience}
 
-  \href{https://www.goldmansachs.com/}{\textbf{Goldman Sachs}} \hspace{3pt} {\footnotesize \faIcon{map-marker-alt}} New York, NY \hspace*{\fill} {\footnotesize \faIcon{calendar}} \hspace{1pt} Incoming, Summer 2021\\
-  {\footnotesize \faIcon{briefcase}} \hspace{1pt} \textit{Summer Analyst Intern, Engineering}
+  \href{https://www.skolem.tech/}{\textbf{Skolem Labs}} \hspace{3pt} {\footnotesize \faIcon{map-marker-alt}} Remote (Chicago, IL) \hspace*{\fill} {\footnotesize \faIcon{calendar}} \hspace{1pt} June 2021 - Present\\
+  {\footnotesize \faIcon{briefcase}} \hspace{1pt} \textit{Consultant, Part-time Software Engineer}
+  \begin{itemize}
+    \item Developing software in OCaml to support a decentralized finance (DeFi) trading platform
+  \end{itemize}
 
   \vspace{3pt}
 
-  \href{https://www.facebook.com/}{\textbf{Facebook}} \hspace{3pt} {\footnotesize \faIcon{map-marker-alt}} Remote (Menlo Park, CA) \hspace*{\fill} {\footnotesize \faIcon{calendar}} \hspace{1pt} Incoming, Winter 2021\\
-  {\footnotesize \faIcon{briefcase}} \hspace{1pt} \textit{Software Engineer Intern}
+  \href{https://www.goldmansachs.com/}{\textbf{Goldman Sachs}} \hspace{3pt} {\footnotesize \faIcon{map-marker-alt}} New York, NY \hspace*{\fill} {\footnotesize \faIcon{calendar}} \hspace{1pt} June 2021 - August 2021\\
+  {\footnotesize \faIcon{briefcase}} \hspace{1pt} \textit{Intern, Investment Banking Engineering}
+  \begin{itemize}
+    \item Helped develop \href{https://www.bloomberg.com/news/articles/2017-06-13/goldman-set-out-to-automate-ipos-and-it-s-come-far-really-fast}{Deal Link}, a platform used by bankers to automate commercial lending processes.
+    \item Increased financial data quality in response to federal regulations using a custom language-agnostic rules engine.
+    \item Interacted with bankers and quantitative strategists to understand and develop dynamic rules to fit changing business needs.
+    \item Interfaced with both internal and external APIs to build a cohesive model of lending information.
+  \end{itemize}
+
+  \vspace{3pt}
+
+  \href{https://www.facebook.com/}{\textbf{Facebook}} \hspace{3pt} {\footnotesize \faIcon{map-marker-alt}} Remote (Seattle, WA) \hspace*{\fill} {\footnotesize \faIcon{calendar}} \hspace{1pt} January 2021 - April 2021\\
+  {\footnotesize \faIcon{briefcase}} \hspace{1pt} \textit{Software Engineer Intern} 
+  \begin{itemize}
+    \item Developed solutions for advertisers to help better target their advertisements while maintaining user privacy.
+    \item Automated the provisioning of SSL certificates on ad-hoc AWS EC2 instances for Facebook clients.
+    \item Helped transition software from a standalone model to a clustered approach using Docker, Kubernetes, \& Kong.
+    \item Coordinated the release of a new version of software used by clients while maintaining compatibility with Facebook APIs.
+  \end{itemize}
 
   \vspace{3pt}
 
   \href{https://www.outrunlabs.com/}{\textbf{Outrun Labs LLC}} \hspace{3pt} {\footnotesize \faIcon{map-marker-alt}} Remote (Seattle, WA) \hspace*{\fill} {\footnotesize \faIcon{calendar}} \hspace{1pt} May 2020 - August 2020\\
-  {\footnotesize \faIcon{briefcase}} \hspace{1pt} \textit{Software Engineer Intern}
+  {\footnotesize \faIcon{briefcase}} \hspace{1pt} \textit{Software Engineer Intern} 
   \begin{itemize}
     \item Helped to develop the \href{https://github.com/revery-ui/revery}{Revery} cross-platform GUI framework by implementing key features and deepening integration into supported platforms.
-    \item Worked on \href{https://onivim.io/}{Onivim2}, a modal text editor based on \texttt{vim}, implementing modern editor features such as hover, signature help, and CJK font rendering.
-    \item Developed high level features using ReasonML \& OCaml, and integrated with system APIs in C/C++ (Win32 \& GTK3) \& Objective-C (Cocoa) using the OCaml foreign function interface (FFI).
+    \item Worked on \href{https://onivim.io/}{Onivim}, a modal text editor based on vim, implementing features such as hover, signature help, and font fallback in ReasonML/OCaml.
+    \item Integrated with system APIs in C/C++ (Win32 \& GTK3) \& Objective-C (Cocoa) using the OCaml foreign function interface.
   \end{itemize}
 
-  \vspace{3pt}
-
-  \href{https://rolltrax.com}{\textbf{Rolltrax LLC}} \hspace{3pt} {\footnotesize \faIcon{map-marker-alt}} Atlanta, GA \hspace*{\fill} {\footnotesize \faIcon{calendar}} \hspace{1pt} August 2017 - Present\\
-  {\footnotesize \faIcon{briefcase}} \hspace{1pt} \textit{Co-Founder \& CTO}
+  \href{https://rolltrax.com}{\textbf{Rolltrax LLC}} \hspace{3pt} {\footnotesize \faIcon{map-marker-alt}} Atlanta, GA \hspace*{\fill} {\footnotesize \faIcon{calendar}} \hspace{1pt} August 2017 - August 2019\\
+  {\footnotesize \faIcon{briefcase}} \hspace{1pt} \textit{Co-Founder \& Software Engineer}
   \begin{itemize}
     \item Developed a full-stack SaaS solution for work-based learning coordinators and students to take attendance and manage their work. The system is composed of a Crystal web API and a ReasonReact frontend.
     \item Beta tested the system at North Springs High School over two years in order to determine the needs of our clients.
-    \item Expanded the use of the system to over a dozen schools in the state of Georgia, where the system is relied upon for daily attendance
   \end{itemize}
 
-  \vspace{8pt}
+  \sectionSpacer
 
   \sectionHeader{Projects}
 
   \vspace{3pt}
 
   \begin{itemize}
-    \item \textbf{xv6 Operating System}: Improved upon the UNIX-based educational operating system by implementing the following features: debug tools, copy-on-write forking, lazy page allocation, priority-based scheduling, user-space threading, and filesystem permissions.
-    \item \textbf{Revery}: Contributed to the Revery cross-platform GUI framework, which enables developers to build consistent user interfaces across multiple platforms. Implemented various key features such as font-fallback and font families, and deepened native integration through platform specific APIs.
-    \item \textbf{gba\_flappybird}: Ported the infamous mobile game Flappy Bird to the GameBoy Advance in C. Interfaced directly with the hardware using features like DMA, affine sprites, audio, and others. 
-    \item \textbf{SECurity-py}: Created a Python program to historically analyze trends between quarterly filings provided by the SEC. The program tracks holdings between quarters listed in 13F-HR forms and reports analytics over a specified period of time.
+    \item \textbf{xv6 Operating System}: Improved upon the UNIX-based educational operating system by implementing the following features: copy-on-write forking, lazy page allocation, priority-based scheduling, user-space threading, filesystem permissions, et. al.
+    \item \href{https://github.com/revery-ui/revery}{\textbf{Revery}}: Contributed to the Revery cross-platform GUI framework, which enables developers to build consistent user interfaces across multiple platforms. Implemented various key features such as font-fallback and font families, and deepened native integration through platform specific APIs.
+    \item \href{https://github.com/zbaylin/ReQuests}{\textbf{ReQuests}}: Created a web requests library in ReasonML/OCaml using cURL that supports parallelism through libuv.
   \end{itemize}
 
-  \vspace{8pt}
+  \sectionSpacer
 
   \sectionHeader{Skills}
   \begin{itemize}
-    \item \textbf{Languages/Tools}: OCaml, ReasonML, C, Java, Ruby, Crystal, C++, Objective-C, Cocoa, PostgreSQL, Javascript, Sinatra, ReactJS, Linux, Win32/COM, Docker, Google Cloud, Dart, Flutter, Git
-    \item \textbf{Relevant Coursework}: \href{http://www.catalog.gatech.edu/search/?P=CS%201331}{Object-Oriented Programming}, \href{http://www.catalog.gatech.edu/search/?P=CS%201332}{Data Structures \& Algorithms}, \href{http://www.catalog.gatech.edu/search/?P=CS%202200}{Systems \& Networks}, \href{http://www.catalog.gatech.edu/search/?P=CS%203210}{Operating Systems}, \href{http://www.catalog.gatech.edu/search/?P=CS%202050}{Discrete Mathematics}, \href{https://people.math.gatech.edu/~trotter/math-3012/toppage.html}{Applied Combinatorics}, \href{https://math.gatech.edu/courses/math/4803-hp}{Number Theory \& Cryptography}, \href{https://math.gatech.edu/courses/math/3406}{Abstract Linear Algebra}
+    \item \textbf{Languages/Tools}: OCaml, ReasonML, C, Java, Ruby, Kotlin, Crystal, Objective-C, Cocoa, SQL, TypeScript, Win32, Cocoa
+    \item \textbf{Relevant Coursework}: Systems \& Networks, Operating Systems, Applied Combinatorics, Number Theory \& Cryptography, Abstract Linear Algebra, Compilers and Interpreters, Graduate Algorithms, High Performance Computer Architecture 
   \end{itemize}
-
 
 \end{document}
